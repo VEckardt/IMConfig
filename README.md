@@ -27,8 +27,7 @@ A of now it contains the following reports and tools.
 
 Unfortunately, some of the reports are not workting in all environments (developed with MSSQL DB, partially tested with Oracle DB).
 
-Important: It is NOT intended to be used in Production. It is intended to be used in a staging environment chain with DEV > TEST > PROD 
-on TEST only for validation purposes.
+Important: These reposrts are NOT intended to be used in production. They are intended to be used in a staging environment chain with DEV > TEST > PROD on TEST only for validation purposes.
 
 Tested with:
 - Integrity 10.6
@@ -42,6 +41,7 @@ Installation Instruction:
 - Configure the Server Side API Connection in is.properties
 
 mksis.apiSession.defaultUser=<username>
+
 mksis.apiSession.defaultPassword=<password>
 
 - In case of issues check the Server.log
