@@ -1,0 +1,51 @@
+#index { position:absolute; top:10px; left:10px;}
+TD
+{
+	border-style: none solid dotted none;
+	font-size: small;
+	background-color: #FCFCFC;
+	padding: 0 4px;
+}
+TH
+{
+	background-color: #363D65;
+	color: #FFFFFF;
+	text-align: center;
+	vertical-align: bottom;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	font-weight: normal;
+	font-size: small;
+	border-style: dotted solid dotted none;
+}
+.verticalText
+{
+	-ms-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);  /* FF3.5+ */
+	-o-transform: rotate(-90deg);  /* Opera 10.5 */
+	-webkit-transform: rotate(-90deg);  /* Saf3.1+, Chrome */
+	filter:  progid:DXImageTransform.Microsoft.BasicImage(rotation=3);  /* IE6,IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)"; /* IE8 */
+
+	text-align: center;
+	vertical-align: top;
+	width: 1em;
+	margin: 0px;
+	padding: 2px;
+	padding-top: 2px;
+	white-space: nowrap;
+}
+BODY
+{
+	font-family: Helvetica, Arial;
+	font-weight: normal;
+	background-color: #EDEDED;
+}
+H1
+{
+	margin-bottom: 0px;
+	text-align: center;
+}
+H2 { text-align: center }
