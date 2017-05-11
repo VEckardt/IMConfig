@@ -1,29 +1,29 @@
 # IMConfig
 Configuration Reports and Tools for PTC Integrity Lifecycle Manager Administrators
 
-This solution set is a group of Repoort and Tools helping Integrity Administrators to manage PTC Integrity Lifecycle Manager implementations better.
+This solution set is a group of Reports and Tools helping Integrity Administrators to manage PTC Integrity Lifecycle Manager implementations better.
 The Development has been started back in 2013, and is continued over the past years with additional reports.
 
 A of now it contains the following reports and tools.
 
 1) Configuration Reports
 
-  Type Fields,
-  Pick List Values,
-  User (Dynamic) Group Assignment,
-  Static Group Details,
-  Static Group and Object Refs,
-  Dynamic Group Details,
-  Dynamic Group and Object Refs,
+* Type Fields,
+* Pick List Values,
+* User (Dynamic) Group Assignment,
+* Static Group Details,
+* Static Group and Object Refs,
+* Dynamic Group Details,
+* Dynamic Group and Object Refs,
 
 
 2) Administrative Reports & Tools
 
-  Currently Unused Fields,
-  Recently Changed Objects,
-  Stage Configuration,
-  Type Property Checker,
-  Type Usage
+* Currently Unused Fields,
+* Recently Changed Objects,
+* Stage Configuration,
+* Type Property Checker,
+* Type Usage
 
 Unfortunately, some of the reports are not workting in all environments (developed with MSSQL DB, partially tested with Oracle DB).
 
