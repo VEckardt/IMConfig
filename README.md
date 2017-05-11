@@ -30,7 +30,7 @@ Unfortunately, some of the reports are not workting in all environments (develop
 Important: It is not intended to beused in Production. It is intended to be used in a staging environment chain with DEV > TEST > PROD 
 on TEST only for validation purposes.
 
-Tested With:
+Tested with:
 - Integrity 10.6
 - Integrity 10.8
 - Integrity 10.9
