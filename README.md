@@ -40,11 +40,13 @@ Installation Instruction:
 
 - Copy IMConfig.war to IntegrityServer\server\mks\deploy
 - Configure the Server Side API Connection in is.properties
-  mksis.apiSession.defaultUser=<username>
-  mksis.apiSession.defaultPassword=<password>
+
+mksis.apiSession.defaultUser=<username>
+mksis.apiSession.defaultPassword=<password>
+
 - In case of issues check the Server.log
 
-Looking forwad to your suggestions, ideas, feedback.
+Looking forward to your suggestions, ideas, feedback.
 
 Thank you
 Volker Eckardt
