@@ -45,8 +45,7 @@ mksis.apiSession.defaultUser=<username>
 mksis.apiSession.defaultPassword=<password>
 
 How To Run:
-
-go to "<your server>:port/IMConfig" and press enter. You should see the Report overview page
+- go to "your server:port/IMConfig" and press enter. You should see the Report overview page
 
 
 Issues:
