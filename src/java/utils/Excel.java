@@ -36,7 +36,7 @@ public class Excel {
     static int cellId = 0;
     static HSSFWorkbook workbook;
     java.util.Date date = new java.util.Date();
-    static String filepath = "../data/public_html/output/";
+    static String filepath = "../data/tmp/web/";
     // String filename = "ExcelData_f" + date.getTime() + ".xls";
     static String filename = "PickListValues.xls";
 
