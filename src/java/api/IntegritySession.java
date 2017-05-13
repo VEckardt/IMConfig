@@ -275,7 +275,7 @@ public class IntegritySession {
             cmd.addSelection(userName);
             // System.out.println("Reading " + fieldName + " ..");
             Response respo = this.execute(cmd);
-            ResponseUtil.printResponse(respo, 1, System.out);
+            // ResponseUtil.printResponse(respo, 1, System.out);
             WorkItem wi = respo.getWorkItem(userName);
             staticGroups = wi.getField("groups").getValueAsString();
 
