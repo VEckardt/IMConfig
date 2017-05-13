@@ -4,8 +4,8 @@
  * Author:         Volker Eckardt, Principal Consultant ALM
  * Purpose:        Custom Developed Code
  * **************  File Version Details  **************
- * Revision:       $Revision: 1.1 $
- * Last changed:   $Date: 2017/05/02 12:18:39CEST $
+ * Revision:       $Revision: 1.3 $
+ * Last changed:   $Date: 2017/05/13 21:22:50CEST $
  */
 package api;
 
@@ -37,6 +37,8 @@ import com.mks.api.util.ResponseUtil;
 import static java.lang.System.out;
 import java.util.NoSuchElementException;
 import java.util.TreeMap;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import utils.Html;
 
@@ -260,14 +262,28 @@ public class IntegritySession {
     }
 
     public String getStaticGroupsForUser(String userName) {
-        String staticGroups = "";
-        for (String name : allStaticGroups.keySet()) {
-            StaticGroup group = allStaticGroups.get(name);
-            if (group.isMemberOfGroup(userName, "")) {
-                staticGroups = staticGroups + (staticGroups.isEmpty() ? "" : ",") + group.getName();
-            }
+        try {
+            String staticGroups = "";
+//        for (String name : allStaticGroups.keySet()) {
+//            StaticGroup group = allStaticGroups.get(name);
+//            if (group.isMemberOfGroup(userName, "")) {
+//                staticGroups = staticGroups + (staticGroups.isEmpty() ? "" : ",") + group.getName();
+//            }
+//        }
+            Command cmd = new Command(Command.AA, "users");
+            cmd.addOption(new Option("groups"));
+            cmd.addSelection(userName);
+            // System.out.println("Reading " + fieldName + " ..");
+            Response respo = this.execute(cmd);
+            ResponseUtil.printResponse(respo, 1, System.out);
+            WorkItem wi = respo.getWorkItem(userName);
+            staticGroups = wi.getField("groups").getValueAsString();
+
+            return staticGroups;
+        } catch (APIException ex) {
+            Logger.getLogger(IntegritySession.class.getName()).log(Level.SEVERE, ex.getMessage(), ex);
+            return "";
         }
-        return staticGroups;
     }
 
     public void readAllUsers() throws APIException {

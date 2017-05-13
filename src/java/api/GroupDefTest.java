@@ -4,8 +4,8 @@
  * Author:         Volker Eckardt, Principal Consultant ALM
  * Purpose:        Custom Developed Code
  * **************  File Version Details  **************
- * Revision:       $Revision: 1.1 $
- * Last changed:   $Date: 2017/05/02 12:18:39CEST $
+ * Revision:       $Revision: 1.3 $
+ * Last changed:   $Date: 2017/05/13 21:22:45CEST $
  */
 package api;
 
@@ -35,7 +35,7 @@ public class GroupDefTest {
         
         // exit(0);
         
-        intSession.readStaticGroups("", "Yes");
+        intSession.readStaticGroups("", "No");
         String staticGroups = intSession.getStaticGroupsForUser(userName);
         out.println("Groups where the user " + userName + " is directly assigned: " + staticGroups);
 

@@ -65,7 +65,7 @@
                     StaticGroup baseGroup = intSession.allStaticGroups.get(staticGroup);
                     if (baseGroup.isMemberOfGroup(name, staticGroups)) {
                         assigned = true;
-                        staticGroups = staticGroups + "," + baseGroup.getName();
+                        // staticGroups = staticGroups + "," + baseGroup.getName();
 
                         out.println("<tr><th>" + "Static Group:</th><td>" + baseGroup.getName() + "</td><td>" + baseGroup.getDescription() + "</td></tr>");
                         if (showDetails.equals("Yes")) {
