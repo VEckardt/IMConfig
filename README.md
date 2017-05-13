@@ -4,7 +4,7 @@ Configuration Reports and Tools for PTC Integrity Lifecycle Manager Administrato
 This solution set is a group of Reports and Tools helping Integrity Administrators to manage PTC Integrity Lifecycle Manager implementations better.
 The Development has been started back in 2013, and is continued over the past years with additional reports.
 
-A of now it contains the following reports and tools.
+As of now it contains the following reports and tools.
 
 1) Configuration Reports
 
