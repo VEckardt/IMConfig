@@ -31,7 +31,8 @@ As of now it contains the following reports and tools.
 
 Unfortunately, some of the reports are not workting in all environments (developed with MSSQL DB, partially tested with Oracle DB).
 
-Important: These reposrts are NOT intended to be used in production. They are intended to be used in a staging environment chain with DEV > TEST > PROD on TEST only for validation purposes.
+## Important 
+These reports are NOT intended to be used (permanently) in production. They are intended to be used in a staging environment chain with DEV > TEST > PROD on TEST only for validation purposes.
 
 ## Tested with:
 - Integrity 10.6
