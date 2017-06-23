@@ -42,11 +42,13 @@ These reports are NOT intended to be used (permanently) in production. They are 
 
 ## Installation Instruction:
 
-- Copy IMConfig.war to IntegrityServer\server\mks\deploy
+- Copy IMConfig.war from dist folder to IntegrityServer\server\mks\deploy
 - Configure the Server Side API Connection in is.properties
 
 - mksis.apiSession.defaultUser=<username>
 - mksis.apiSession.defaultPassword=<password>
+
+note: DefaultPassword will work with non-encrypted password only. Login alternative currently under review.
 
 ## How To Run
 - go to "your server:port/IMConfig" and press enter. You should see the Report overview page
